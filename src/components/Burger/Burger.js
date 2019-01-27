@@ -5,4 +5,4 @@ const burger = (props) =>(
 
 );
 
-return default burger;
+export default burger;

@@ -5,11 +5,11 @@ class BurgerBuilder extends Component {
 
     render() {
         return (
-            <Aux>
+            <Auxillary>
                 <div>Burger</div>
                 <div>Build Controls</div>
 
-            </Aux>
+            </Auxillary>
         );
     }
 }

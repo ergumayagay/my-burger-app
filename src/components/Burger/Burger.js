@@ -6,9 +6,9 @@ import BurgerIngridient from './BurgerIngridient/BurgerIngridient';
 
 const burger = (props) =>{
 
-    // console.log("ingridients: " +props.ingridients)
+    // console.log("ingredients: " +props.ingredients)
 
-    // let keys = Object.keys(props.ingridients);
+    // let keys = Object.keys(props.ingredients);
 
     // console.log("keys: "+ keys);
 
@@ -23,11 +23,11 @@ const burger = (props) =>{
     //     console.log(i);
     //  });
 
-    let transformedIngridients = Object.keys(props.ingridients)//returns an array of an object's own property name
+    let transformedingredients = Object.keys(props.ingredients)//returns an array of an object's own property name
                                             .map(igKey=>{
                                             //  console.log("key: "+ igKey);
-                                            console.log(igKey+" "+props.ingridients[igKey] );
-                                                return [...Array(props.ingridients[igKey])] //create
+                                            console.log(igKey+" "+props.ingredients[igKey] );
+                                                return [...Array(props.ingredients[igKey])] //create
                                                     .map((_,i)=>{
                                                     //console.log("igkey "+igKey+i+" i: "+i);
                                                         return <BurgerIngridient key={igKey+i} type={igKey} />
@@ -36,14 +36,14 @@ const burger = (props) =>{
                                                 return arr.concat(el);
                                             },[]);
 
-    if (transformedIngridients.length === 0){
-        transformedIngridients = <p>Please start adding ingridients</p>
+    if (transformedingredients.length === 0){
+        transformedingredients = <p>Please start adding ingredients</p>
     }
     
     return (
         <div className={classes.Burger}>
             <BurgerIngridient type="bread-top" />
-            {transformedIngridients}
+            {transformedingredients}
             <BurgerIngridient type="bread-bottom" />
         </div>
     );

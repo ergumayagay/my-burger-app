@@ -1,3 +1,5 @@
+Course Project for React- The Complete Guide by Maximilian
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

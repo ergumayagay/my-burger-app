@@ -26,7 +26,7 @@ const burger = (props) =>{
     let transformedingredients = Object.keys(props.ingredients)//returns an array of an object's own property name
                                             .map(igKey=>{
                                             //  console.log("key: "+ igKey);
-                                            console.log(igKey+" "+props.ingredients[igKey] );
+                                           // console.log(igKey+" "+props.ingredients[igKey] );
                                                 return [...Array(props.ingredients[igKey])] //create
                                                     .map((_,i)=>{
                                                     //console.log("igkey "+igKey+i+" i: "+i);
